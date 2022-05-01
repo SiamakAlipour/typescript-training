@@ -2,6 +2,11 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable no-empty-function */
 
+/**
+ * this is final class which can not be extended by another class
+ * but we can create an instance of this class by create method
+ */
+
 class FinalClass {
   private constructor(private numbers: number[]) {}
 
