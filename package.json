@@ -1,0 +1,26 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "Training Typescript",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "ts-node main.ts",
+    "lintf": "eslint . --ext .ts --fix",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "Siamak Alipour",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@typescript-eslint/scope-manager": "^5.21.0",
+    "@typescript-eslint/typescript-estree": "^5.21.0",
+    "@typescript-eslint/utils": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.6.2"
+  }
+}
