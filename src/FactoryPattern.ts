@@ -13,8 +13,12 @@ class Boot implements Shoe {
 class Sneaker implements Shoe {
   purpose = 'walking';
 }
-
-const ShoeObj = {
+type ShoeCreator = {
+  create(type: 'balletFlat'): BalletFlat;
+  create(type: 'boot'): Boot;
+  create(type: 'sneaker'): Sneaker;
+};
+const ShoeObj: ShoeCreator = {
   create(type: 'balletFlat' | 'boot' | 'sneaker'): Shoe {
     switch (type) {
       case 'balletFlat':
